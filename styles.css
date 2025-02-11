@@ -160,7 +160,7 @@ nav ul li a:hover {
 
 .home {
   /*background-color: black;*/
-  background-image: url(img/bg7.jpg);
+  background-image: url(img/bg1.jpg);
 }
 
 .description {
@@ -260,7 +260,15 @@ nav ul li a:hover {
 /*.......project..........*/
 
 .projects{
-  background-image: url(img/bg6.jpg); 
+  background-image: url(img/bg2.jpg); 
+}
+
+.project-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  grid-gap: 40px;
+  margin-right: 30px;
+  margin-left: 30px;
 }
 
 .box{
@@ -326,7 +334,6 @@ nav ul li a:hover {
 
 /*----Skills Section Starts----*/
 .skills{
-  /*background-image: url(img/bg3.jpg);*/
   background-color: black;
 }
 
@@ -358,7 +365,7 @@ nav ul li a:hover {
 /*...........contact section starts......*/
 
 .contact{
-  background-image: url(img/bg4.jpg);
+  background-image: url(img/bg1.jpg);
 }
 
 form{
