@@ -389,6 +389,11 @@ nav ul li a:hover {
   border: 2px solid yellow;
 }
 
+.overlay p a{
+  color: rgb(105, 255, 5);
+  text-decoration: underline;
+}
+
 /*----Skills Section Starts----*/
 .skills{
   background-color: black;
