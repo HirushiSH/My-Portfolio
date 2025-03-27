@@ -424,6 +424,84 @@ nav ul li a:hover {
   margin-left: 2rem;
 }
 
+/*my work sesion*/
+
+
+.Works{
+  background-image: url(img/bg2.jpg); 
+}
+
+
+.card2{
+  height: 350px;
+  padding: 30px 0px;
+  background: #070707;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  border: 2px solid var(--primary-color);
+  cursor: pointer;
+}
+
+.card2 img{
+  width: 400px;
+}
+
+.card2:hover {
+  border: 3px solid var(--primary-color);
+  height: 360px;
+  box-shadow: 0 0 30px aquamarine;
+}
+
+.popup-overlay {
+  display: none;
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  position: relative;
+  background: var(--text-dark);
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 90vW;
+  max-height: 90vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.popup-content img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  top: 20px;
+  object-fit: contain;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 50px;
+  cursor: pointer;
+  color: yellow;
+  font-weight: bold;
+}
+
+
+.close-btn:hover {
+  color: aqua;
+  font-size: 60px;
+}
+
 /*...........contact section starts......*/
 
 .contact{
@@ -458,6 +536,11 @@ form a{
 @media (width < 750px) {
   nav .checkbox {
     display: block;
+  }
+  
+  .popup-content {
+    max-width: 95vw;
+    max-height: 95vh;
   }
 
   ul {
