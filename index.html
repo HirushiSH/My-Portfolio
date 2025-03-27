@@ -310,32 +310,42 @@
           <div class="card2">
             <h2 class="subtitle">Coffe Shop Menu</h2>
             <div class="pra">
-              <br>
-              <img src="img/csm.jpg" alt="Coffee Menu" onclick="showPopup()">
-              <br>
+              <p>Designed using Canva</p>
+              <img src="img/csm.jpg" alt="Coffee Menu" onclick="showPopup(this.src)">
             </div>
           </div>
         </div>
 
-        <!-- Popup Window -->
-
-    <div class="popup-overlay" id="popup">
-      <span class="close-btn" onclick="closePopup()">&times;</span>
-      <div class="popup-content">
-        <img src="img/csm.jpg" alt="Large Coffee Menu">
+        <div class="box">
+          <div class="card2">
+            <h2 class="subtitle">Consert Poster</h2>
+            <div class="pra">
+              <p>Designed using Adobe Photoshop</p>
+              <img src="img/cp.jpg" alt="Consert Poster" onclick="showPopup(this.src)">
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    
-    <script>
-      function showPopup() {
-          document.getElementById('popup').style.display = 'flex';
-      }
 
-      function closePopup() {
-          document.getElementById('popup').style.display = 'none';
-      }
-    </script>
-
+      <!-- Popup Window -->
+      <div class="popup-overlay" id="popup">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <div class="popup-content">
+          <img id="popup-img" src="" alt="Large View">
+        </div>
+      </div>
+      
+      <script>
+        function showPopup(imageSrc) {
+          document.getElementById('popup-img').src = imageSrc; // Set clicked image source
+          document.getElementById('popup').style.display = 'flex'; // Show popup
+        }
+      
+        function closePopup() {
+          document.getElementById('popup').style.display = 'none'; // Hide popup
+        }
+      </script>
+       
     </section>
       
     <!----Contact Section Starts-->
