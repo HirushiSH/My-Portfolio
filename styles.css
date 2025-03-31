@@ -277,7 +277,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 400px;
+  min-height: 500px;
 }
 
 .card{
@@ -431,7 +431,6 @@ nav ul li a:hover {
   background-color: rgb(1, 24, 24); 
 }
 
-
 .card2{
   height: 350px;
   padding: 30px 0px;
@@ -500,6 +499,35 @@ nav ul li a:hover {
 .close-btn:hover {
   color: aqua;
   font-size: 60px;
+}
+
+/*certificates sesion*/
+
+.certificates{
+  background-color: rgb(1, 24, 24); 
+}
+
+.card4{
+  height: 350px;
+  padding: 30px 0px;
+  background: #070707;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  border: 2px solid var(--primary-color);
+  cursor: pointer;
+}
+
+.card4 img{
+  width: 300px;
+  height: 200px;
+}
+
+.card4:hover {
+  border: 3px solid var(--primary-color);
+  height: 360px;
+  box-shadow: 0 0 20px aquamarine;
 }
 
 /*...........contact section starts......*/
