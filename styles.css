@@ -438,7 +438,7 @@ nav ul li a:hover {
   position: relative;
   overflow: hidden;
   text-align: center;
-  border: 2px solid var(--primary-color);
+  border: 2px solid rgb(32, 155, 155);
   cursor: pointer;
 }
 
@@ -518,6 +518,7 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   min-height: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .card4{
@@ -528,7 +529,7 @@ nav ul li a:hover {
   position: relative;
   overflow: hidden;
   text-align: center;
-  border: 2px solid var(--primary-color);
+  border: 2px solid rgb(14, 66, 66);
   cursor: pointer;
 }
 
@@ -538,8 +539,9 @@ nav ul li a:hover {
 }
 
 .card4:hover {
-  border: 3px solid var(--primary-color);
-  box-shadow: 0 0 20px aquamarine;
+  border: 3px solid rgb(14, 66, 66);
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px aqua;
 }
 
 /*...........contact section starts......*/
