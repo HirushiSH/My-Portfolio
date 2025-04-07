@@ -11,7 +11,7 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="dark-mode.css" id="theme-stylesheet">
     <title>Amaya Jayashantha Portfolio</title>
   </head>
   
@@ -31,6 +31,7 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
+          <button id="theme-toggle">Light Mode</button>
         </ul>
       </div>
     </nav>
@@ -64,7 +65,9 @@
       </div>
         </div>
         <div class="image">
-          <img src="img/img1.jpg" alt="profile" />
+          <div class="image-container">
+            <img src="img/img1.png" alt="profile" />
+           </div>
         </div>
       </div>
     </section>
@@ -391,9 +394,9 @@
 
       <!-- Popup Window -->
       <div class="popup-overlay" id="popup">
-        <span class="close-btn" onclick="closePopup()">&times;</span>
         <div class="popup-content">
           <img id="popup-img" src="" alt="Large View">
+          <span class="close-btn" onclick="closePopup()">&times;</span>
         </div>
       </div>
       
@@ -525,6 +528,29 @@
         </div>
       </div>
     </section>
+
+    <script>
+      const themeToggleBtn = document.getElementById("theme-toggle");
+      const stylesheet = document.getElementById("theme-stylesheet");
+    
+      // Check localStorage for the theme preference
+      if (localStorage.getItem("theme") === "dark") {
+        stylesheet.setAttribute("href", "dark-mode.css");
+        themeToggleBtn.textContent = "Light Mode";
+      }
+    
+      themeToggleBtn.addEventListener("click", () => {
+        if (stylesheet.getAttribute("href") === "light-mode.css") {
+          stylesheet.setAttribute("href", "dark-mode.css");
+          localStorage.setItem("theme", "dark");
+          themeToggleBtn.textContent = "Light Mode";
+        } else {
+          stylesheet.setAttribute("href", "light-mode.css");
+          localStorage.setItem("theme", "light");
+          themeToggleBtn.textContent = "Dark Mode";
+        }
+      });
+    </script>
 
   </body>
 </html>
